@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.dilrukshiperera.styleomega">
+    
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        tools:replace="android:icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name="com.orm.SugarApp">
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="style.db" />
+        <meta-data android:name="VERSION"
+            android:value="7 " /> //handle operations related to tables
+        <meta-data android:name="QUERY_LOG"
+            android:value="true" /> //object notation ....puts the query to the console log(for debugging purposes)
+        <meta-data android:name="DOMAIN_PACKAGE_NAME"
+            android:value="com.example.dilrukshiperera.styleomega.Models" />  //create model classes
+
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegistrationActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/> //to prevent the soft keyboard from pushing the view up(adjustNothing)
+        <activity android:name=".CheckoutActivity" />
+        <activity android:name=".CategoryItemsActivity" android:parentActivityName=".HomeActivity" android:launchMode="singleTop"/>
+        <activity android:name=".DetailedItemActivity" android:parentActivityName=".CategoryItemsActivity" android:launchMode="singleTop"/>
+        <activity android:name=".InquiryConversationActivity" android:parentActivityName=".DetailedItemActivity" android:launchMode="singleTop"></activity>
+    </application>
+
+</manifest>

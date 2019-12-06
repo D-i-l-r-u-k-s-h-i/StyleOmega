@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/inquiryreplyET"
+        android:layout_width="264dp"
+        android:layout_height="92dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/inquiry_edittext"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="Enter your reply to inquiry here"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:maxLines="5"
+        android:minLines="2"
+        android:paddingLeft="10dp"
+        android:scrollbars="vertical"
+        android:singleLine="false" />
+
+</RelativeLayout>

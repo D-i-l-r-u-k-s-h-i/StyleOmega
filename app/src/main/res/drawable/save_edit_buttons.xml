@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item>-->
+        <!--<shape xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+            <!--<corners-->
+                <!--android:radius="10dp" />-->
+
+            <!--<solid-->
+                <!--android:color="#CCCCCC" />-->
+
+            <!--&lt;!&ndash;<stroke&ndash;&gt;-->
+                <!--&lt;!&ndash;android:color="#D6DBDF"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:width="2dp" />&ndash;&gt;-->
+
+            <!--<size-->
+                <!--android:width="65dp"-->
+                <!--android:height="10dp" />-->
+
+        <!--</shape>-->
+    <!--</item>-->
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <corners
+                android:radius="10dp" />
+
+            <solid
+                android:color="#CCCCCC" />
+
+            <stroke
+                android:color="#CCCCCC"
+                android:width="2dp" />
+
+            <size
+                android:width="65dp"
+                android:height="10dp" />
+
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <corners
+                android:radius="10dp" />
+
+            <solid
+                android:color="#D6D6D6" />
+
+            <stroke
+                android:color="#CCCCCC"
+                android:width="2dp" />
+
+            <size
+                android:width="65dp"
+                android:height="10dp" />
+
+        </shape>
+    </item>
+</selector>
